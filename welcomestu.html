@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/custom/welcome_css.css">
+    <script src="js/jquery-3.3.1.js"></script>
+    <script src="https://npmcdn.com/tether@1.2.4/dist/js/tether.min.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/5.1.0/firebase.js"></script>
+    <script src="js/custom/firebase.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/util.js"></script>
+    <script src="js/custom/model/question.js"></script>
+    <script src="js/custom/model/quizoperation.js"></script>
+    <script src="js/custom/controller/welcomestucontroller.js"></script>
+</head>
+<body>
+        <h1 class="bg-primary display-3">Welcome <span id="uid"></span></h1>
+        <div class="container">
+    <h2>Available Quiz</h2>
+    <button class="btn btn-primary-outline" id="java">Java</button>
+    <button class="btn btn-primary-outline" id="javascript">Javascript</button>
+    </div>
+    <p>Time Left <span id="time"></span></p>
+    <div id="status">
+
+    </div>
+<hr>
+<fieldset>
+    <legend>Test</legend>
+    <p id="question"></p>
+    <input id="c-1" type="radio" name="ans" value="0"><label for="" id="r-1"></label>
+    <br>
+    <input id="c-5" type="radio" name="ans" value="1"><label for="" id="r-2"></label>
+    <br>
+    <input id="c-3" type="radio" name="ans" value="2"><label for="" id="r-3"></label>
+    <br>
+    <input id="c-4" type="radio" name="ans" value="3"><label for=""  id="r-4"></label>
+    <br>
+    <button id="prev">Prev</button>
+    <button id="next">Next</button>
+    <button id="submit" class="btn btn-primary-outline">Submit</button>
+    <button id="finish">Finish</button>
+</fieldset>
+<fieldset>
+    <legend>Score
+    </legend>
+    <p id="s-question"></p>
+    <label for="">RightAnswer</label>
+    <label for="" id="s-rans"></label>
+    <br>
+    <label for="">Your Answer</label>
+    <label for="" id="s-urans"></label>
+    <br>
+    <p id="s-question2"></p>
+    <label for="">RightAnswer</label>
+    <label for="" id="s-rans2"></label>
+    <br>
+    <label for="">Your Answer</label>
+    <label for="" id="s-urans2"></label>
+    <br>
+    <label for="">TotalScore</label>
+    <label for="" id="total"></label>
+</fieldset><p>Time Left <span id="time"></span></p>
+
+</div>
+
+</body>
+</html>

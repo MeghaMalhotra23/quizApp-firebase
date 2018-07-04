@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Test Engine</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/custom/custom.css">
+    <script src="js/jquery-3.3.1.js"></script>
+    <script src="https://npmcdn.com/tether@1.2.4/dist/js/tether.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/config.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/5.1.0/firebase.js"></script>
+    <script src="js/custom/firebase.js"></script>
+    <script src="js/custom/model/usermodel.js"></script>
+    <script src="js/custom/model/useropertaion.js"></script>
+    <script src="js/custom/controller/usercontroller.js"></script>
+</head>
+<body>
+    <h1 class="display-3 tst-engine bg-primary">Test Engine</h1>
+    <button id="login" class="btn btn-primary">login</button>
+    <button id="register" class="btn btn-outline-primary">Register</button>
+    <div class="login hide">
+        <form class="">
+            <div class="form-group">
+                <h3 id="login-msg"></h3>
+            </div>
+            <div class="form-group">
+            <label for="" >Username</label>
+            <input type="email" id="uid" placeholder="Enter Username..." class="form-control">
+            </div>
+            <div class="form-group">
+            <label for="" >Password</label>
+            <input type="password" id="pass" placeholder="Enter password..." class="form-control">
+            </div>
+            <button class="btn btn-outline-dark" id="login-btn">Submit</button>
+        </form>
+    </div>
+    <div class="hide register">
+            <form action="" class="">
+                <div class="form-group">
+                    <h3 id="reg-msg"></h3>
+                </div>
+                <div class="form-group">
+                <label for="">Name</label>
+                <input type="text" id="r-name" placeholder="Enter name..." class="form-control" >
+                </div>
+                <div class="form-group">
+                <label for="">Age</label>
+                <input type="text" placeholder="Enter Age" id="r-age"class="form-control">
+                </div>
+                <div class="form-group">
+                    <label for="">Account type</label><br>
+                    <input type="radio" name="Account" value="teacher" id="r-1">Teacher <br>
+                    <input type="radio" name="Account" value="student" id="r-2">Student
+                </div>
+                <div class="form-group">
+                        <label for="">Username
+                        </label>
+                        <input type="text" id="r-uid" placeholder="Enter Username" class="form-control">
+                </div>
+                <div class="form-group">
+                        <label for="">Password</label>
+                        <input type="password" id="r-pass" placeholder="Enter Password" class="form-control">
+                </div>
+                <button class="btn btn-outline-dark" id="reg-btn" type="button">Submit</button>
+            </form>
+        </div>
+</body>
+</html>

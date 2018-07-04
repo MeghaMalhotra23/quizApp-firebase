@@ -1,0 +1,20 @@
+h1{
+    color: #fff;
+}
+.hide{
+    display: none;
+}
+.show{
+    display: block;
+}
+.container{
+    width: 1200px;
+}
+.green{
+    color:green;
+    border-radius: 50%;
+}
+.red{
+    color:red;
+    border-radius: 50%;
+}

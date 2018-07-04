@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/custom/welcome_css.css">
+    <script src="js/jquery-3.3.1.js"></script>
+    <script src="https://npmcdn.com/tether@1.2.4/dist/js/tether.min.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/5.1.0/firebase.js"></script>
+    <script src="js/custom/firebase.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/util.js"></script>
+    <script src="js/custom/model/question.js"></script>
+    <script src="js/custom/model/quesoperation.js"></script>
+    <script src="js/custom/controller/welcomecontroller.js"></script>
+</head>
+<body>
+        <h1 class="bg-primary display-3">Welcome <span id="uid"></span></h1>
+    <div class="container">
+    
+    <button id="create-quiz-btn" class="btn btn-dark">Create Quiz</button>
+    <form action="" class="hide" id="q-form">
+        <div class="form-group">
+            <h3 id="q-msg"></h3>
+        </div>
+        <div class="form-group">
+            <label for="">Title of Quiz</label>
+            <input type="text" id="q-title" class="form-control">
+        </div>
+        <div class="form-group">
+            <label for="">Number of Questions</label>
+            <input type="text" id="q-no" class="form-control">
+        </div>
+        <button type="button" class="btn btn-success" id="create">Create</button>
+    </form>
+    <div class="hide" id="add-ques">
+        <div>
+            <h2>TITLE : <span id="q-title"></span></h2>
+        </div>
+        <div>
+            <h5>Question : <span id="q-count"></span></h5>
+        </div>
+        <div>
+            <h6 id="sub-msg"></h6>
+        </div>
+        <div class="form-group">
+            <label for="">Question</label><br>
+            <input type="text" class="form-control" id="ques">
+        </div>
+        <div class="form-group">
+            <label for="">Enter choices</label> <br>
+            <input type="text" placeholder="choice 1" class="form-control choice" > <br>
+            <input type="text" placeholder="choice 2" class="form-control choice" > <br>
+            <input type="text" placeholder="choice 3" class="form-control choice" > <br>
+            <input type="text" placeholder="choice 4" class="form-control choice" > <br>
+        </div>
+        <div class="form-group">
+            <label for="">Choose correct answer</label><br>
+            <input type="radio" name="rans" value="0"  id="r-1" checked
+            >Choice 1 <br>
+            <input type="radio" name="rans" value="1"  id="r-2">Choice 2 <br>
+            <input type="radio" name="rans" value="2"  id="r-3">Choice 3 <br>
+            <input type="radio" name="rans" value="3"  id="r-4">Choice 4 <br>
+        </div>
+        <button id="submit-ques" class="btn btn-warning">Submit Question</button>
+        <button id="save" class="btn btn-success" disabled aria-disabled="true">Save/Finish</button>
+    </div>
+    </div>
+</body>
+</html>
