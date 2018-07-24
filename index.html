@@ -7,6 +7,7 @@
     <title>Test Engine</title>
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/custom/custom.css">
+    <link rel="stylesheet" href="css/custom/mainpage.css">
     <script src="js/jquery-3.3.1.js"></script>
     <script src="https://npmcdn.com/tether@1.2.4/dist/js/tether.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
@@ -18,9 +19,11 @@
     <script src="js/custom/controller/usercontroller.js"></script>
 </head>
 <body>
-    <h1 class="display-3 tst-engine bg-primary">Test Engine</h1>
+    <h1 class="display-3 tst-engine">Test Engine</h1>
+    <div class="buttons">
     <button id="login" class="btn btn-primary">login</button>
-    <button id="register" class="btn btn-outline-primary">Register</button>
+<button id="register" class="btn">Register</button>
+    </div>
     <div class="login hide">
         <form class="">
             <div class="form-group">
@@ -34,7 +37,7 @@
             <label for="" >Password</label>
             <input type="password" id="pass" placeholder="Enter password..." class="form-control">
             </div>
-            <button class="btn btn-outline-dark" id="login-btn">Submit</button>
+            <button class="btn" id="login-btn">Submit</button>
         </form>
     </div>
     <div class="hide register">

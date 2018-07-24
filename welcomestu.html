@@ -18,12 +18,18 @@
     <script src="js/custom/controller/welcomestucontroller.js"></script>
 </head>
 <body>
-        <h1 class="bg-primary display-3">Welcome <span id="uid"></span></h1>
+        <h1 class="display-3">Welcome <span id="uid"></span></h1>
+        <button class="btn btn-danger" id="log-out">LOG OUT</button>
         <div class="container">
+            <div id="choose-quiz">
     <h2>Available Quiz</h2>
     <button class="btn btn-primary-outline" id="java">Java</button>
     <button class="btn btn-primary-outline" id="javascript">Javascript</button>
+    <label for="">Search Quiz By ID</label>
+    <input type="text" id="search-input">
+    <button class="btn btn-outline-primary" id="search-quiz">Search</button>
     </div>
+    <div id="ques-view" class="hide">
     <p>Time Left <span id="time"></span></p>
     <div id="status">
 
@@ -40,15 +46,14 @@
     <br>
     <input id="c-4" type="radio" name="ans" value="3"><label for=""  id="r-4"></label>
     <br>
-    <button id="prev">Prev</button>
-    <button id="next">Next</button>
-    <button id="submit" class="btn btn-primary-outline">Submit</button>
-    <button id="finish">Finish</button>
+    <button id="prev" class="btn btn-outline-primary">Prev</button>
+    <button id="next" class="btn btn-outline-primary">Next</button>
+    <button id="submit" class="btn btn-outline-success">Submit</button>
+    <button id="finish" class="btn btn-danger">Finish</button>
 </fieldset>
-<fieldset>
-    <legend>Score
-    </legend>
-    <p id="s-question"></p>
+</div>
+<div id="score-view" class="hide">
+   <!-- <p id="s-question"></p>
     <label for="">RightAnswer</label>
     <label for="" id="s-rans"></label>
     <br>
@@ -60,12 +65,15 @@
     <label for="" id="s-rans2"></label>
     <br>
     <label for="">Your Answer</label>
-    <label for="" id="s-urans2"></label>
-    <br>
-    <label for="">TotalScore</label>
-    <label for="" id="total"></label>
-</fieldset><p>Time Left <span id="time"></span></p>
+    <label for="" id="s-urans2"></label> -->
+    <div id="scoring">
 
+    </div>
+    <br>
+    <h2>Total Score</h2>
+    <label for="" id="total"></label>
+    <button class="btn btn-outline-danger" id="back">Play another Quiz</button>
+</div>
 </div>
 
 </body>

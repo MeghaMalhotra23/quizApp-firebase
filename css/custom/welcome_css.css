@@ -1,5 +1,19 @@
 h1{
     color: #fff;
+    background-color: #c85;
+    position: relative;
+}
+#log-out{
+    position: absolute;
+    top: 20px;
+    right: 10px;
+    margin: 5px;
+    background-color: #fff;
+    color: #c85;
+}
+#log-out:hover{
+    background-color: #dca;
+    color: #c85;
 }
 .hide{
     display: none;
@@ -11,10 +25,35 @@ h1{
     width: 1200px;
 }
 .green{
-    color:green;
+    background-color:green;
+    width: 50px;
+    height: 50px;
+    display: inline;
+    cursor: pointer;
     border-radius: 50%;
+    padding: 10px;
+    margin: 10px;
+    color: #fff;
 }
 .red{
-    color:red;
+    padding: 10px;
+    margin: 10px;
+    color: #fff;
+    display: inline;
+    cursor: pointer;
+    height: 50px;
+    width: 70px;
+    background-color:red;
     border-radius: 50%;
+}
+.add-img{
+    height: 100px;
+    width: 100px;
+}
+.container{
+    background-color: #eee;
+    padding: 20px;
+}
+#create-quiz-btn{
+    background-color: #fff;
 }

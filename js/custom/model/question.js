@@ -7,7 +7,7 @@ class Question{
         this.id=id;
         this.score=quesConstants.score;
         this.correctAns=false;
-        this.urans=ans;
+        this.urans=null;
         //this.quizid=quizid;
     }
 }

@@ -16,6 +16,15 @@ function bindEvents(){
     document.querySelector('#create').addEventListener('click',createQuiz);
     document.querySelector('#submit-ques').addEventListener('click',submitQues);
     document.querySelector('#save').addEventListener('click',saveFB)
+    document.querySelector('#back').addEventListener('click',back);
+    document.querySelector('#log-out').addEventListener('click',logout);
+}
+function logout(){
+    localStorage.clear();
+    location.href='index.html';
+}
+function back(){
+    location.href='welcome.html';
 }
 function showhide(){
     document.querySelector('#q-form').classList.toggle('hide');
@@ -40,7 +49,7 @@ function createQuiz(){
     document.querySelector('#q-form').classList.add('hide');
     document.querySelector('#add-ques').classList.remove('hide');
     document.querySelector('#q-count').innerHTML=counter;
-    document.querySelector('#q-title').innerHTML=title;
+    document.querySelector('#q-title2').innerHTML=title;
     }
 }
 function submitQues(){
@@ -77,10 +86,11 @@ document.querySelector('#q-count').innerHTML=counter;
 }
 if(counter>no){
     document.querySelector('#submit-ques').disabled=true;
-    document.querySelector('#save').disabled=false;
-    saveFB();
-    alert('Quiz has been saved');
-    location.href='welcome.html';
+   document.querySelector('#save').disabled=false;
+   document.querySelector('#q-count').innerHTML=counter-1;
+    //saveFB();
+   //alert('Quiz has been saved');
+    //location.href='welcome.html';
 }
 }
 function clearInputs(){
@@ -97,5 +107,12 @@ j++;
 console.log(arr);
 }
 function saveFB(){
-    quesOperation.addQuiz(arr,title);
+    var id=title+randomNumber(100,1);
+    quesOperation.addQuiz(arr,id);
+    // var p=document.createElement("p");
+    // p.innerHTML=`your quiz Id is : ${id}`;
+    // document.querySelector("quiz123").appendChild("p");
+    alert('quiz id is '+id);
+    
+    //location.href='welcome.html';
 }

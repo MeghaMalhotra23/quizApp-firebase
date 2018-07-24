@@ -1,8 +1,10 @@
 function startTimer(timeLeft,delay,id){
     var c= setInterval(()=>{
         document.querySelector('#'+id).innerHTML=timeLeft;
-        if(timeLeft<=0)
+        if(timeLeft<=0){
         clearInterval(c);
+        stop();
+        }
         else{
             timeLeft--;
         }
